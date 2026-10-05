@@ -9,3 +9,11 @@ app.use(
     express.urlencoded({ extended: true })
 )
 
+const pool = new pg.Pool({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'mahasiswa',
+    password: '123',
+    port: 5432,
+})
+
